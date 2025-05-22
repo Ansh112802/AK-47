@@ -1,0 +1,106 @@
+/* Dashboard.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+  background-color: #249924; /* light green background */
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.dashboard-container h1 {
+  text-align: center;
+  color: #2e7d32;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  font-weight: bold;
+}
+
+.filter-group select,
+.filter-group input[type="date"] {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dashboard-stats p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.dashboard-stats strong {
+  color: #1b5e20;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.popup-content h3,
+.popup-content h4 {
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.popup-content ul {
+  padding-left: 20px;
+}
+
+.popup-content button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #1b5e20;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .filter-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popup-content {
+    width: 90%;
+    min-width: unset;
+  }
+
+  .dashboard-stats p {
+    font-size: 16px;
+  }
+}
