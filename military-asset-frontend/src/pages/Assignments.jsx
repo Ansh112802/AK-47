@@ -30,7 +30,7 @@ const Assignments = () => {
     }
 
     try {
-      await axios.post("http://localhost:3000/api/assignments", formData);
+      await axios.post("https://ak-47-1.onrender.com/api/assignments", formData);
       alert("Assignment recorded successfully!");
       setFormData({
         personnelId: "",
