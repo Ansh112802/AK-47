@@ -51,7 +51,7 @@ const Purchases = () => {
       if (filter.startDate) params.startDate = filter.startDate;
       if (filter.endDate) params.endDate = filter.endDate;
 
-      const res = await axios.get("http://localhost:3000/api/purchases", { params });
+      const res = await axios.get("https://ak-47-1.onrender.com/api/purchases", { params });
       setHistoricalData(res.data);
     } catch (error) {
       console.error("Error fetching purchases:", error.response?.data || error.message);
