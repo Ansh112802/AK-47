@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 3000;
 const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://divyanshsingh112802:JwFYHD7b5jnYmfXW@cluster0.sizdxnv.mongodb.net/?retryWrites=true&w=majority';
 
 app.use(cors({
-  origin: "http://localhost:3001" // allow your React frontend
+  origin: "https://ak-47-nine.vercel.app" // allow your React frontend
 }));
 app.use(express.json());
 

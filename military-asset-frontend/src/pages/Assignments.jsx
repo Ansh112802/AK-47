@@ -49,7 +49,7 @@ const Assignments = () => {
 
   const fetchAllData = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/assignments");
+      const res = await axios.get("https://ak-47-1.onrender.com/api/assignments");
       setAllData(res.data);
     } catch (error) {
       console.error("Fetch Error:", error.response || error);

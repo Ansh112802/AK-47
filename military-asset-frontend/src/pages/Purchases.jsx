@@ -34,7 +34,7 @@ const Purchases = () => {
     };
 
     try {
-      await axios.post("http://localhost:3000/api/purchases", payload);
+      await axios.post("https://ak-47-1.onrender.com/api/purchases", payload);
       alert("Purchase recorded successfully!");
       setFormData({ base: "", assetType: "", quantity: "" });
     } catch (error) {

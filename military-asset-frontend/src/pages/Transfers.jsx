@@ -39,7 +39,7 @@ const Transfers = () => {
       if (filters.date) params.date = filters.date;
       if (filters.assetType) params.assetType = filters.assetType;
 
-      const response = await axios.get("http://localhost:3000/api/transfers", {
+      const response = await axios.get("https://ak-47-1.onrender.com/api/transfers", {
         params,
       });
       setTransferHistory(response.data);
@@ -51,7 +51,7 @@ const Transfers = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000/api/transfers", {
+      await axios.post("https://ak-47-1.onrender.com/api/transfers", {
         ...formData,
         quantity: Number(formData.quantity),
       });

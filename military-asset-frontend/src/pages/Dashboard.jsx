@@ -29,7 +29,7 @@ const Dashboard = () => {
       setLoading(true);
       setError("");
       try {
-        const res = await axios.get("http://localhost:3000/api/dashboard", {
+        const res = await axios.get("https://ak-47-1.onrender.com/api/dashboard", {
           params: filters,
         });
 
